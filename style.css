@@ -1,0 +1,115 @@
+body{
+    background-color: #111344;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+    outline: none;
+    text-indent: 35px;
+    font-size: 15px;
+    border: none;
+    padding: none;
+    margin-right: 5px;
+    background: url("search.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: 1px solid white;
+    background-position-x: 10px;
+    color: white;    
+    
+}
+button{
+    width: 100px;
+    height: 33px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transition: background 1s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.imgContainer{
+    width:40%;
+    height: auto;
+    background-color: transparent;
+}
+
+.imgContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.textContainer{
+    width: 40%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.banner{
+    color: white;
+    font-family: 'Kalam',cursive;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+p{
+    margin-top: 0px;
+    text-align: justify;
+}
+
+@media screen and (max-width:600px){
+    .banner{
+        margin-left: 0px;
+    }
+    main{
+        display: block;
+        width: 100%;
+    }
+    .imgContainer{
+        width: 100%;
+        height: auto;
+    }
+    .imgContainer img{
+        width: 100%;
+        height: auto;
+    }
+    .textContainer{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+
+    input{
+        width: 200px;
+        display: block;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    button{
+        display: block;
+    }
+}
